@@ -4,7 +4,7 @@ Plugin Name: ODL Custom Testimonials Widget
 Plugin URI: http://goldplugins.com/our-plugins/easy-faqs-details/
 Description: Easy Testimonials - Provides custom post type, shortcodes, widgets, and other functionality for Testimonials.
 Author: Illuminati Karate
-Version: 1.4.0
+Version: 1.4.1
 Author URI: http://illuminatikarate.com
 GitHub Plugin URI: https://github.com/OneDayLiVE/ODL-custom-testimonials-widget
 GitHub Branch:     nativeyards.com
@@ -213,7 +213,7 @@ function build_custom_testimonial($testimonial,$show_thumbs,$show_title,$postid,
 	<blockquote class="easy_testimonial">	
 		<div class="<?php echo $body_class; ?>">
 				<h3>Hear From Our Customers</h3>	
-				<?php echo wpautop($testimonial['content']); ?>			
+				&ldquo;<?php echo wpautop($testimonial['content']); ?>	&rdquo;		
 		</div>	
 			<p class="<?php echo $author_class; ?>">
 				<?php if(strlen($testimonial['client'])>0 || strlen($testimonial['position'])>0 ): ?>
