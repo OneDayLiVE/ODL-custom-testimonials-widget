@@ -4,9 +4,10 @@ Plugin Name: ODL Custom Testimonials Widget
 Plugin URI: http://goldplugins.com/our-plugins/easy-faqs-details/
 Description: Easy FAQs - Provides custom post type, shortcodes, widgets, and other functionality for Frequently Asked Questions (FAQs).
 Author: Illuminati Karate
-Version: 1.3.4
+Version: 1.3.5
 Author URI: http://illuminatikarate.com
-
+GitHub Plugin URI: https://github.com/OneDayLiVE/ODL-custom-testimonials-widget
+GitHub Branch:     nativeyards.com
 */
 /*
 This file is part of Easy Testimonials.
