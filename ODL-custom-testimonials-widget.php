@@ -4,7 +4,7 @@ Plugin Name: ODL Custom Testimonials Widget
 Plugin URI: http://goldplugins.com/our-plugins/easy-faqs-details/
 Description: Easy Testimonials - Provides custom post type, shortcodes, widgets, and other functionality for Testimonials.
 Author: Illuminati Karate
-Version: 1.3.8
+Version: 1.4.0
 Author URI: http://illuminatikarate.com
 GitHub Plugin URI: https://github.com/OneDayLiVE/ODL-custom-testimonials-widget
 GitHub Branch:     nativeyards.com
@@ -210,31 +210,16 @@ function outputCustomTestimonial($atts){
 //taking into account current options
 function build_custom_testimonial($testimonial,$show_thumbs,$show_title,$postid,$author_class,$body_class,$testimonials_link){
 ?>
-	<blockquote class="easy_testimonial">		
-		<?php if ($show_thumbs) {
-			echo $testimonial['image'];
-		} ?>		
-		<?php if ($show_title) {
-			echo '<p class="easy_testimonial_title">' . get_the_title($postid) . '</p>';
-		} ?>	
-		<?php if(get_option('meta_data_position')): ?>
-			<p class="<?php echo $author_class; ?>">
-				<?php if(strlen($testimonial['client'])>0 || strlen($testimonial['position'])>0 ): ?>
-				<cite><span class="testimonial-client"><?php echo $testimonial['client'];?></span><br/><span class="testimonial-position"><?php echo $testimonial['position'];?></span></cite>
-				<?php endif; ?>
-			</p>	
-		<?php endif; ?>
+	<blockquote class="easy_testimonial">	
 		<div class="<?php echo $body_class; ?>">
+				<h3>Hear From Our Customers</h3>	
 				<?php echo wpautop($testimonial['content']); ?>			
 		</div>	
 			<p class="<?php echo $author_class; ?>">
 				<?php if(strlen($testimonial['client'])>0 || strlen($testimonial['position'])>0 ): ?>
 				<cite><span class="testimonial-client"><?php echo $testimonial['client'];?></span><br/><span class="testimonial-position"><?php echo $testimonial['position'];?></span></cite>
 				<?php endif; ?>
-			</p>
-			<div class="clearfix">
-			<a href="<?php echo get_the_permalink($postid); ?>" class="">Continue reading <i class="fa fa-chevron-right"></i></a><br/>
-		</div>	
+			</p>			
 	</blockquote>
 			
 
