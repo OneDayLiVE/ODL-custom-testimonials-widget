@@ -2,9 +2,9 @@
 /*
 Plugin Name: ODL Custom Testimonials Widget
 Plugin URI: http://goldplugins.com/our-plugins/easy-faqs-details/
-Description: Easy FAQs - Provides custom post type, shortcodes, widgets, and other functionality for Frequently Asked Questions (FAQs).
+Description: Easy Testimonials - Provides custom post type, shortcodes, widgets, and other functionality for Testimonials.
 Author: Illuminati Karate
-Version: 1.3.5
+Version: 1.3.7
 Author URI: http://illuminatikarate.com
 GitHub Plugin URI: https://github.com/OneDayLiVE/ODL-custom-testimonials-widget
 GitHub Branch:     nativeyards.com
@@ -30,7 +30,7 @@ Shout out to http://www.makeuseof.com/tag/how-to-create-wordpress-widgets/ for t
 
 class customTestimonialWidget extends WP_Widget
 {
-	function randomTestimonialWidget(){
+	function customTestimonialWidget(){
 		$widget_ops = array('classname' => 'randomTestimonialWidget', 'description' => 'Displays a random Testimonial.' );
 		$this->WP_Widget('randomTestimonialWidget', 'Easy Random Testimonial', $widget_ops);
 	}
